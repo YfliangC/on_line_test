@@ -1,0 +1,26 @@
+.mybody{
+    left: 50%;
+    top: 50%;
+    width: 2400px;
+    height: 2400px;
+    margin-left: -1200px;
+    margin-top: -1200px;
+    position: absolute;
+    -webkit-animation: circle 20s infinite linear;
+    -moz-animation: circle 20s infinite linear;
+ }
+.myfadein{
+    animation: fade-in;
+    animation-iteration-count: 1;
+    -webkit-animation:fade-in 15s;
+}
+
+@-webkit-keyframes circle{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(-360deg);}
+}
+@keyframes fade-in {
+    0% {opacity: 0;}
+    10% {opacity: 0;}
+    100% {opacity: 1;}
+}
